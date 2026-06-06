@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suruchi — Reel Editing</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ══ NAVIGATION ══ -->
+    <nav>
+        <a href="index.html" class="nav-logo"><span>Suruchi</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="padding-top: 12rem; min-height: 80vh;">
+        <div class="section-header">
+            <div>
+                <p class="section-label reveal">Portfolio</p>
+                <h2 class="section-title reveal reveal-delay-1">Reel <em>Editing</em></h2>
+            </div>
+            <a href="index.html#work" class="btn btn-outline" style="margin-bottom: 2rem;">Back to Work</a>
+        </div>
+
+        <!-- ══ REEL CARDS GRID ══ -->
+        <div class="reels-grid">
+
+            <!-- Reel 01 -->
+            <article class="reel-card reveal reveal-delay-2">
+                <div class="reel-thumb-wrap">
+                    <img
+                        src="WhatsApp Image 2026-04-06 at 3.48.02 PM.jpeg"
+                        alt="Instagram Reel — Creative Photo Composition"
+                        class="reel-thumb"
+                    />
+                    <div class="reel-overlay">
+                        <div class="reel-play-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="reel-badge">Reel</span>
+                </div>
+                <div class="reel-info">
+                    <span class="reel-num">01</span>
+                    <h3 class="reel-title">Creative <em>Composition</em></h3>
+                    <p class="reel-desc">A dreamy, perspective-play reel featuring photo montage editing — nature embedded within street textures.</p>
+                    <a
+                        href="https://www.instagram.com/reel/DWim-uXiODv/?igsh=ZmYxMmJ3ODA0ency"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-gold reel-watch-btn"
+                        id="reel-watch-01"
+                    >
+                        <span>▶ &nbsp;Watch on Instagram</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Reel 02 -->
+            <article class="reel-card reveal reveal-delay-3">
+                <div class="reel-thumb-wrap">
+                    <img
+                        src="WhatsApp Image 2026-04-06 at 3.48.03 PM.jpeg"
+                        alt="Instagram Reel — Orange Juice Product Edit"
+                        class="reel-thumb"
+                    />
+                    <div class="reel-overlay">
+                        <div class="reel-play-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="reel-badge">Reel</span>
+                </div>
+                <div class="reel-info">
+                    <span class="reel-num">02</span>
+                    <h3 class="reel-title">Product <em>Edit</em></h3>
+                    <p class="reel-desc">A vibrant product reel edit — bold typography meets fresh juice aesthetics for a scroll-stopping commercial look.</p>
+                    <a
+                        href="https://www.instagram.com/reel/DWgIaSpgfxU/?igsh=YXI3N3ppZXY5ZHQ1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-gold reel-watch-btn"
+                        id="reel-watch-02"
+                    >
+                        <span>▶ &nbsp;Watch on Instagram</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Placeholder card – add more reels here -->
+            <article class="reel-card reel-card--placeholder reveal reveal-delay-4">
+                <div class="reel-thumb-wrap reel-thumb-placeholder">
+                    <div class="reel-placeholder-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="40" height="40" style="color:var(--gold-dim);">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <p>More reels coming soon</p>
+                    </div>
+                </div>
+                <div class="reel-info">
+                    <span class="reel-num">03</span>
+                    <h3 class="reel-title" style="color:var(--cream-dim);">Coming <em>Soon</em></h3>
+                    <p class="reel-desc">Stay tuned for more creative reel edits.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <style>
+        /* ── REELS GRID ── */
+        .reels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        /* ── REEL CARD ── */
+        .reel-card {
+            border: 1px solid var(--border);
+            background: var(--bg3);
+            position: relative;
+            transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+            overflow: hidden;
+        }
+
+        .reel-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-md);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(201,168,76,0.12);
+        }
+
+        /* ── THUMBNAIL WRAP ── */
+        .reel-thumb-wrap {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            overflow: hidden;
+            background: var(--bg2);
+        }
+
+        .reel-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+        }
+
+        .reel-card:hover .reel-thumb {
+            transform: scale(1.05);
+        }
+
+        /* ── OVERLAY ── */
+        .reel-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                transparent 40%,
+                rgba(6,5,4,0.75) 100%
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity var(--transition);
+        }
+
+        .reel-card:hover .reel-overlay {
+            opacity: 1;
+        }
+
+        .reel-play-icon {
+            width: 60px;
+            height: 60px;
+            border: 1.5px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            backdrop-filter: blur(6px);
+            background: rgba(6,5,4,0.4);
+            transform: scale(0.8);
+            transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+        }
+
+        .reel-card:hover .reel-play-icon {
+            transform: scale(1);
+        }
+
+        /* ── BADGE ── */
+        .reel-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--gold);
+            color: var(--bg);
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 0.28rem 0.75rem;
+            font-family: var(--ff-body);
+        }
+
+        /* ── INFO BLOCK ── */
+        .reel-info {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .reel-num {
+            font-family: var(--ff-display);
+            font-size: 0.7rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.2em;
+            font-style: italic;
+        }
+
+        .reel-title {
+            font-family: var(--ff-display);
+            font-size: 1.45rem;
+            font-weight: 400;
+            color: var(--cream);
+            line-height: 1.2;
+        }
+
+        .reel-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .reel-desc {
+            font-size: 0.82rem;
+            color: var(--cream-dim);
+            line-height: 1.8;
+            margin-top: 0.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .reel-watch-btn {
+            align-self: flex-start;
+            font-size: 0.68rem;
+            padding: 0.75rem 1.6rem;
+            letter-spacing: 0.15em;
+        }
+
+        /* ── PLACEHOLDER CARD ── */
+        .reel-thumb-placeholder {
+            border: 1px dashed var(--border);
+        }
+
+        .reel-placeholder-inner {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: var(--cream-dim);
+            font-size: 0.82rem;
+            font-family: var(--ff-display);
+            font-style: italic;
+            letter-spacing: 0.05em;
+        }
+
+        /* ── REVEAL ANIMATION ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.35s; }
+        .reveal-delay-4 { transition-delay: 0.5s; }
+    </style>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+        <span class="footer-logo">Suruchi</span>
+        <span class="footer-copy">© 2025 — All rights reserved</span>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/editbysuruchi?igsh=MWU5bHQxMHg3cW80MA==" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Behance</a>
+        </div>
+    </footer>
+
+    <!-- ══ SCRIPTS ══ -->
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Nav shrink on scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            nav.style.padding = window.scrollY > 60 ? '1rem 4rem' : '1.6rem 4rem';
+        });
+    </script>
+</body>
+
+</html>

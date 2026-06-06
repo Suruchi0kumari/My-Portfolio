@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suruchi — Creative Editor & Developer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ══ NAVIGATION ══ -->
+    <nav>
+        <a href="#" class="nav-logo"><span>Suruchi</span></a>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+
+        <div class="hero-left">
+            <div class="hero-eyebrow">
+                <span class="hero-eyebrow-line"></span>
+                <span>Creative Editor &amp; Frontend Developer</span>
+            </div>
+            <h1>
+
+                <em> Suruchi</em>
+            </h1>
+            <p class="hero-desc">
+                A CSE student who turns ideas into aesthetic digital experiences —
+                cinematic reels, pixel-perfect interfaces, and visuals that speak before words do.
+            </p>
+            <div class="hero-cta">
+                <button class="btn btn-gold"
+                    onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+                    <span>View My Work</span>
+                </button>
+                <button class="btn btn-outline"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Hire Me
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-frame">
+                <div class="hero-frame-box main">
+                    <img src="assets/profile.jpg" alt="Suruchi Profile" class="hero-profile-img" />
+                </div>
+                <div class="hero-frame-corner"></div>
+                <div class="hero-frame-badge">
+                    CSE Student<br>
+                    Creative Editor<br>
+                    Open for Work
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ══ MARQUEE ══ -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <!-- Repeated twice for seamless loop -->
+            <div class="marquee-item"><span class="marquee-dot"></span>Reel Editing</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Social Media Design</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Thumbnails</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Poster Design</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Frontend Development</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Visual Storytelling</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Reel Editing</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Social Media Design</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Thumbnails</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Poster Design</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Frontend Development</div>
+            <div class="marquee-item"><span class="marquee-dot"></span>Visual Storytelling</div>
+        </div>
+    </div>
+
+    <!-- ══ WORK ══ -->
+    <section class="section" id="work">
+        <div class="section-header">
+            <div>
+                <p class="section-label reveal">Selected Work</p>
+                <h2 class="section-title reveal reveal-delay-1">What I <em>Create</em></h2>
+            </div>
+        </div>
+
+        <div class="work-grid reveal reveal-delay-2">
+            <a href="work-reels.html" class="work-card">
+                <p class="work-number">01 — Editing</p>
+                <h3>Reel Editing</h3>
+                <p>Short-form video content crafted for maximum impact. Transitions, pacing, and storytelling that stops
+                    the scroll and earns the share.</p>
+                <div class="work-arrow">↗</div>
+            </a>
+            <a href="work-posts.html" class="work-card">
+                <p class="work-number">02 — Design</p>
+                <h3>Instagram Posts</h3>
+                <p>Feed-worthy visuals with a consistent visual language. Every post designed to strengthen brand
+                    identity and grow engagement.</p>
+                <div class="work-arrow">↗</div>
+            </a>
+            <a href="work-thumbnails.html" class="work-card">
+                <p class="work-number">03 — Thumbnails</p>
+                <h3>Click-worthy Covers</h3>
+                <p>Bold, high-converting thumbnails that blend striking typography with smart visual hierarchy — built
+                    to drive clicks.</p>
+                <div class="work-arrow">↗</div>
+            </a>
+            <a href="work-posters.html" class="work-card">
+                <p class="work-number">04 — Print & Digital</p>
+                <h3>Posters</h3>
+                <p>Print and digital posters with strong artistic direction. Expressive, memorable, and designed to
+                    command attention.</p>
+                <div class="work-arrow">↗</div>
+            </a>
+            <a href="work-tech.html" class="work-card" style="grid-column: 1 / -1; border-right: none;">
+                <p class="work-number">05 — Development</p>
+                <h3>Tech Projects</h3>
+                <p>Frontend applications, dynamic interfaces, and clean code that bridge the gap between design and
+                    functionality. Showcasing my web and software development work.</p>
+                <div class="work-arrow">↗</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ══ ABOUT ══ -->
+    <section class="section section-alt" id="about">
+        <div class="about-grid">
+            <div class="about-visual reveal">
+                <div class="about-img-frame">
+                    <img src="assets/profile.jpg" alt="Suruchi Profile" class="about-profile-img" />
+                </div>
+                <div class="about-accent-box"></div>
+                <div class="about-tag">
+                    CSE Student<br>
+                    Creative Editor<br>
+                    India
+                </div>
+            </div>
+
+            <div class="about-text">
+                <p class="section-label reveal">About Me</p>
+                <h2 class="section-title reveal reveal-delay-1">The mind<br>behind the <em>work</em></h2>
+
+                <p class="reveal reveal-delay-2">
+                    I'm a Computer Science Engineering student with a deep passion for visual storytelling.
+                    I blend technical knowledge with creative instinct to produce content that feels both
+                    intentional and alive.
+                </p>
+                <p class="reveal reveal-delay-2">
+                    Whether I'm cutting reels, designing social graphics, or building interfaces — my goal
+                    is always the same: make it beautiful, make it work, and make it unforgettable.
+                </p>
+
+                <div class="stats-row reveal reveal-delay-3">
+                    <div class="stat-item">
+                        <div class="stat-num">10+</div>
+                        <div class="stat-desc">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">1</div>
+                        <div class="stat-desc">Years Exp.</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">∞</div>
+                        <div class="stat-desc">Ideas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SERVICES ══ -->
+    <section class="section" id="services">
+        <div class="section-header">
+            <div>
+                <p class="section-label reveal">What I Offer</p>
+                <h2 class="section-title reveal reveal-delay-1">My <em>Services</em></h2>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon">🎞️</div>
+                <h3>Reel Editing</h3>
+                <p>Engaging short-form videos for Instagram, YouTube Shorts, and more. Trendy transitions, synced audio,
+                    and viral-ready pacing that keeps viewers hooked.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon">✦</div>
+                <h3>Social Media Design</h3>
+                <p>Cohesive visual branding across Instagram feeds, stories, and posts. Aesthetic, on-brand, and built
+                    for maximum engagement and growth.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon">◈</div>
+                <h3>Thumbnails & Posters</h3>
+                <p>Bold, high-converting thumbnails and print-quality posters with strong visual hierarchy, expressive
+                    design, and attention-commanding presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CONTACT ══ -->
+    <section class="section section-alt" id="contact">
+        <div class="section-header">
+            <div>
+                <p class="section-label reveal">Get In Touch</p>
+                <h2 class="section-title reveal reveal-delay-1">Let's work <em>together</em></h2>
+            </div>
+        </div>
+
+        <div class="contact-grid">
+            <form class="contact-form reveal" id="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="e.g. Suruchi " />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="your@email.com" />
+                </div>
+                <div class="form-group">
+                    <label for="msg">Your Message</label>
+                    <textarea id="msg" rows="5" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold" style="align-self: flex-start;">
+                    <span>Send Message</span>
+                </button>
+            </form>
+
+            <div class="contact-info-block reveal reveal-delay-1">
+                <h3>"Let's make<br>something beautiful."</h3>
+                <div class="contact-item">
+                    <span class="contact-item-key">Email</span>
+                    <a href="mailto:suruchikri152002@gmail.com" class="contact-item-val contact-ig-link">suruchikri152002@gmail.com ↗</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item-key">Based In</span>
+                    <span class="contact-item-val">India</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item-key">Availability</span>
+                    <span class="contact-item-val">Open for freelance projects</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item-key">Response Time</span>
+                    <span class="contact-item-val">Within 24 hours</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item-key">Instagram</span>
+                    <a
+                        href="https://www.instagram.com/editbysuruchi?igsh=MWU5bHQxMHg3cW80MA=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item-val contact-ig-link"
+                    >@editbysuruchi ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+        <span class="footer-logo">Suruchi</span>
+        <span class="footer-copy">© 2025 — All rights reserved</span>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/editbysuruchi?igsh=MWU5bHQxMHg3cW80MA==" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Behance</a>
+            <a href="https://github.com/Suruchi0kumari" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- ══ SCRIPTS ══ -->
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Nav shrink on scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            nav.style.padding = window.scrollY > 60 ? '1rem 4rem' : '1.6rem 4rem';
+        });
+
+        // Contact form → mailto
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name    = document.getElementById('name').value.trim();
+            const replyTo = document.getElementById('email').value.trim();
+            const message = document.getElementById('msg').value.trim();
+
+            if (!message) {
+                alert('Please write a message before sending.');
+                return;
+            }
+
+            const to      = 'suruchikri152002@gmail.com';
+            const subject = encodeURIComponent(
+                name ? `Work Inquiry from ${name}` : 'Work Inquiry from your Portfolio'
+            );
+            const body = encodeURIComponent(
+                (name    ? `Name: ${name}\n`     : '') +
+                (replyTo ? `Email: ${replyTo}\n` : '') +
+                `\nMessage:\n${message}`
+            );
+
+            // Open Gmail compose window directly in browser (no mail client needed)
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(to)}&su=${subject}&body=${body}`;
+            window.open(gmailUrl, '_blank');
+
+            // Button feedback
+            const btn = document.querySelector('#contact-form .btn-gold span');
+            if (btn) {
+                btn.textContent = '✓ Opening Mail…';
+                setTimeout(() => { btn.textContent = 'Send Message'; }, 3000);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
